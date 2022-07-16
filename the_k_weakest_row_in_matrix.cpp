@@ -1,4 +1,8 @@
-
+    {
+        int n=mat[0].size();
+        for(int i=0;i<mat.size();i++)
+        {
+            mat[i].push_back(i);
         }
         sort(mat.begin(),mat.end());
         vector<int> ans(k);
@@ -6,5 +10,5 @@
         {
             ans[i]=mat[i][n];
         }
-        return ans;       
+        return ans;
     }
